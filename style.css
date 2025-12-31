@@ -41,3 +41,53 @@ section {
 #contact {
     background-color: #e6ffe6;
 }
+#skills {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #eaeaea;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+#projects {
+  padding: 40px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.project-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+#services {
+  background: #f4f6f8;
+  padding: 40px;
+}
+
+.service-box {
+  margin-bottom: 20px;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: white;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
