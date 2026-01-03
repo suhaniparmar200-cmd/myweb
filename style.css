@@ -62,7 +62,7 @@ section {
 }
 
 .project-card {
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 8px;
@@ -90,4 +90,33 @@ nav a {
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
+}
+
+#contact {
+    max-width: 400px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#contact button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
 }
