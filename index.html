@@ -1,113 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Suhani Parmar Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+function showMessage() {
+    alert("Hi! I am learning HTML, CSS, and JavaScript.");
+}
+function validateForm() {
+    let valid = true;
 
-    <link rel="stylesheet" href="style.css">
+    let name = document.getElementById("name").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let message = document.getElementById("message").value.trim();
 
-</head>
-<body>
-    <nav>
-  <a href="#home">Home</a>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#contact">Contact</a>
-</nav>
+    document.getElementById("nameError").innerText = "";
+    document.getElementById("emailError").innerText = "";
+    document.getElementById("messageError").innerText = "";
 
-<!-- Home Section -->
-    <section id="home">
-        <h1>Hello, I am Suhani Parmar</h1>
-        <p>Welcome to my website</p>
-    </section>
+    if (name === "") {
+        document.getElementById("nameError").innerText = "Name is required";
+        valid = false;
+    }
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        
-            <p>hey! Suhani Parmar here, and I believe...</p>
-            <p>knowing your way around the web is a superpower in today's digital age.</p>
-           <p>developing websites allows you to create your own online presence, share your ideas with the world, and even build a career in tech.</p>
-        
-    </section>
+    if (email === "") {
+        document.getElementById("emailError").innerText = "Email is required";
+        valid = false;
+    }
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: suhaniparmar200@gmail.com</p>
-    </section>
+    if (message === "") {
+        document.getElementById("messageError").innerText = "Message is required";
+        valid = false;
+    }
 
-    <section id="skills">
-  <h2>My Skills</h2>
-  <ul class="skills-list">
-    <li>HTML5</li>
-    <li>CSS3</li>
-    <li>JavaScript</li>
-    <li>Git & GitHub</li>
-    <li>Responsive Web Design</li>
-  </ul>
-</section>
+    if (valid) {
+        alert("Form submitted successfully!");
+    }
 
-<section id="projects">
-  <h2>My Projects</h2>
-
-  <div class="project-card">
-    <h3>Personal Website</h3>
-    <p>A responsive personal website built using HTML and CSS.</p>
-    <a href="https://suhaniparmar200-cmd.github.io/myweb/" target="_blank">View Project</a>
-  </div>
-
-  <div class="project-card">
-    <h3>Contact Form</h3>
-    <p>A simple contact form with validation.</p>
-    <a href="#" target="_blank">View Project</a>
-  </div>
-</section>
-
-<section id="services">
-  <h2>Services</h2>
-
-  <div class="service-box">
-    <h3>Web Development</h3>
-    <p>Building clean and responsive websites.</p>
-  </div>
-
-  <div class="service-box">
-    <h3>UI Design</h3>
-    <p>Creating simple and user-friendly designs.</p>
-  </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Us</h2>
-
-        <form id="contactForm" onsubmit="return validateForm()">
-
-            <label>Name</label>
-            <input type="text" id="name">
-            <small id="nameError" class="error"></small>
-
-            <label>Email</label>
-            <input type="email" id="email">
-            <small id="emailError" class="error"></small>
-
-            <label>Message</label>
-            <textarea id="message"></textarea>
-            <small id="messageError" class="error"></small>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-
-</section>
-
-<footer>
-  <p>© 2025 Suhani Parmar. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
-
-</body>
-</html>
+    return valid;
+}
