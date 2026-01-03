@@ -4,6 +4,9 @@
     <title>Suhani Parmar Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <nav>
@@ -26,7 +29,7 @@
         
             <p>hey! Suhani Parmar here, and I believe...</p>
             <p>knowing your way around the web is a superpower in today's digital age.</p>
-            <p>developing websites allows you to create your own online presence, share your ideas with the world, and even build a career in tech!!!</p>
+           <p>developing websites allows you to create your own online presence, share your ideas with the world, and even build a career in tech.</p>
         
     </section>
 
@@ -76,12 +79,35 @@
     <p>Creating simple and user-friendly designs.</p>
   </div>
 </section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+        <form id="contactForm" onsubmit="return validateForm()">
+
+            <label>Name</label>
+            <input type="text" id="name">
+            <small id="nameError" class="error"></small>
+
+            <label>Email</label>
+            <input type="email" id="email">
+            <small id="emailError" class="error"></small>
+
+            <label>Message</label>
+            <textarea id="message"></textarea>
+            <small id="messageError" class="error"></small>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+
+</section>
+
 <footer>
   <p>© 2025 Suhani Parmar. All rights reserved.</p>
 </footer>
 
+<script src="script.js"></script>
 
 </body>
 </html>
-
-
