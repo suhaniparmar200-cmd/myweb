@@ -33,20 +33,7 @@ function validateForm() {
 
     return valid;
 }
-document.addEventListener("DOMContentLoaded", function () {
-  const toggleBtn = document.getElementById("themeToggle");
-  const body = document.body;
 
-  toggleBtn.addEventListener("click", function () {
-    body.classList.toggle("dark-theme");
-
-    if (body.classList.contains("dark-theme")) {
-      toggleBtn.textContent = "☀️";
-    } else {
-      toggleBtn.textContent = "🌙";
-    }
-  });
-});
 
 
 
