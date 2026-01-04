@@ -1,19 +1,19 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
-  --card-color: #f2f2f2;
 }
 
 .dark-theme {
   --bg-color: #121212;
   --text-color: #ffffff;
-  --card-color: #1e1e1e;
 }
+
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: 0.3s;
 }
+
 
 .section, .card {
   background-color: var(--card-color);
