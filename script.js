@@ -33,24 +33,20 @@ function validateForm() {
 
     return valid;
 }
-const toggleBtn = document.getElementById("themeToggle");
-const body = document.body;
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtn = document.getElementById("themeToggle");
+  const body = document.body;
 
-// Load saved theme
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-theme");
-  toggleBtn.textContent = "☀️";
-}
+  toggleBtn.addEventListener("click", function () {
+    body.classList.toggle("dark-theme");
 
-toggleBtn.addEventListener("click", () => {
-  body.classList.toggle("dark-theme");
-
-  if (body.classList.contains("dark-theme")) {
-    toggleBtn.textContent = "☀️";
-    localStorage.setItem("theme", "dark");
-  } else {
-    toggleBtn.textContent = "🌙";
-    localStorage.setItem("theme", "light");
-  }
+    if (body.classList.contains("dark-theme")) {
+      toggleBtn.textContent = "☀️";
+    } else {
+      toggleBtn.textContent = "🌙";
+    }
+  });
 });
+
+
 
