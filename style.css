@@ -185,4 +185,26 @@ nav a {
         margin: 0 4px;
     }
 }
+.intro {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #222;
+}
+
+.highlight {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0a66c2;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #444;
+  max-width: 650px;
+}
+
 
