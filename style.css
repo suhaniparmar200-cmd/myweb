@@ -160,10 +160,12 @@ nav a {
   opacity: 0.9;
 }
 @media (max-width: 768px) {
-  nav {
+  header {
     flex-direction: row;
   }
 }
+
+
 
 
 
