@@ -195,7 +195,7 @@ nav a {
 .highlight {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #0a66c2;
+  color: black;
   margin: 10px 0;
 }
 
@@ -206,5 +206,6 @@ nav a {
   color: #444;
   max-width: 650px;
 }
+
 
 
