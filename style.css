@@ -21,7 +21,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     background-color: #333;
     padding: 12px;
     position: sticky;
@@ -33,7 +33,7 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     white-space: nowrap;
 }
 
@@ -137,6 +137,7 @@ nav a {
     color: red;
     font-size: 14px;
 }
+/* Hire Me & Download Resume Buttons */
 .cta-buttons {
   margin-top: 20px;
 }
@@ -165,27 +166,22 @@ nav a {
   transform: scale(1.05);
   opacity: 0.9;
 }
+
 @media (max-width: 768px) {
   header {
     flex-direction: row;
     flex-wrap: nowrap;
   }
 }
+
 @media (max-width: 768px) {
     nav {
         justify-content: space-between;
-        padding: 10px;
+        padding: 8px;
     }
 
     nav a {
-        font-size: 14px;
-        margin: 0 6px;
+        font-size: 13px;
+        margin: 0 4px;
     }
 }
-
-
-
-
-
-
-
