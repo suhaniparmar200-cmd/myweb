@@ -18,17 +18,23 @@ body {
 
 /* Navigation bar */
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     background-color: #333;
-    padding: 15px;
+    padding: 12px;
     position: sticky;
     top: 0;
+    flex-wrap: nowrap;
 }
+
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
+    font-size: 16px;
+    white-space: nowrap;
 }
 
 nav a:hover {
@@ -165,6 +171,18 @@ nav a {
     flex-wrap: nowrap;
   }
 }
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 0 6px;
+    }
+}
+
 
 
 
